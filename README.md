@@ -62,6 +62,26 @@ npm install
 npm run dev
 ```
 
+Video Previews
+Convert & Add a Looping Demo Video
+
+Use ffmpeg to compress and loop any video for project previews:
+
+ffmpeg -stream_loop 2 -i "/path/to/source.mp4" \
+-vf "scale=480:-2" -t 15 \
+-c:v libx264 -preset slow -crf 28 \
+-c:a aac -b:a 64k \
+"$HOME/Master-Portfolio/site/public/images/<project>-demo.mp4"
+
+    Replace <project> with your project name (e.g., flipping99-demo.mp4)
+
+    Video will loop 3 times (about 15s) and scale to 480px wide
+
+    Place alongside PNG fallback:
+    site/public/images/<project>-placeholder.png
+
+
+
 ## Deployment
 
 1. Push this repo to GitHub.
