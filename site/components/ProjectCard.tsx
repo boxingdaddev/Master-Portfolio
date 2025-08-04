@@ -1,4 +1,4 @@
-import Image from 'next/image'
+'use client'
 import Link from 'next/link'
 
 type ProjectCardProps = {
@@ -13,7 +13,7 @@ type ProjectCardProps = {
 export default function ProjectCard({ title, description, tech, link, thumbnail, video }: ProjectCardProps) {
   return (
     <div className="rounded-xl shadow-md hover:shadow-xl transition p-4 mb-8">
-      <div className="mb-4 relative w-full h-48 overflow-hidden rounded-lg">
+      <div className="mb-4 relative w-full h-48 overflow-hidden rounded-lg bg-gray-200 flex items-center justify-center">
         {video ? (
           <video
             src={video}
@@ -21,16 +21,17 @@ export default function ProjectCard({ title, description, tech, link, thumbnail,
             loop
             muted
             playsInline
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain bg-white dark:bg-gray-900 object-left"
           />
         ) : thumbnail ? (
-          <Image 
-            src={thumbnail} 
-            alt={`${title} thumbnail`} 
-            fill 
-            style={{ objectFit: 'cover' }}
+          <img
+            src={thumbnail}
+            alt={`${title} thumbnail`}
+            className="w-full h-full object-contain bg-white dark:bg-gray-900 object-left"
           />
-        ) : null}
+        ) : (
+          <span className="text-gray-500 text-sm">Preview Coming Soon</span>
+        )}
       </div>
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       <p className="text-sm mb-2">{description}</p>
