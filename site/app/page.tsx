@@ -1,5 +1,10 @@
 import ProjectCard from '../components/ProjectCard'
 
+export const metadata = {
+  title: 'Adam Makhyoun Portfolio',
+  description: 'Mobile Developer specializing in React Native & Expo',
+}
+
 export default function Home() {
   return (
     <div className="space-y-16">
@@ -34,7 +39,7 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section className="px-6">
+      <section className="px-6 pt-16">
         <h2 className="text-3xl mb-6">Skills</h2>
         <div className="flex flex-wrap gap-2">
           {['React Native', 'Expo', 'TypeScript', 'AsyncStorage', 'API Integration', 'Firebase/Supabase (Planned)'].map(skill => (
@@ -46,7 +51,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="px-6 mb-16">
+      <section className="px-6 pt-16 mb-16">
         <h2 className="text-3xl mb-4">Contact</h2>
         <p>Email: <a href="mailto:adamscope@gmail.com" className="text-blue-500 underline">adamscope@gmail.com</a></p>
         <p>GitHub: <a href="https://github.com/boxingdaddev" target="_blank" className="text-blue-500 underline">github.com/boxingdaddev</a></p>
