@@ -10,8 +10,10 @@ export default function Home() {
     <div className="space-y-16">
       {/* Hero Section */}
       <section className="h-screen flex flex-col justify-center items-center text-center space-y-4">
-        <h1 className="text-6xl">Adam Makhyoun</h1>
-        <h2 className="text-2xl text-gray-500">Cross-Platform Mobile App Developer</h2>
+        <h1 className="text-6xl text-gray-900 dark:text-[#D4AF37]">Adam Makhyoun</h1>
+        <h2 className="text-2xl text-[#6B7280] dark:text-[#93B8BF]">
+          Cross-Platform Mobile App Developer
+        </h2>
         <p className="text-sm text-gray-400 mt-4">Scroll to see my work</p>
       </section>
 
@@ -32,7 +34,7 @@ export default function Home() {
           title="AI Flashcards" 
           description="AI-powered flashcard generator and study tool. Includes planned real-time chat feature." 
           tech="React Native, Expo, OpenAI API"
-          link="https://github.com/ai-flashcards"
+          link="https://github.com/boxingdaddev/ai-flashcards"
           video="/images/aiflashcards-demo.mp4" // replace with GIF/Video later
           thumbnail="/images/aiflashcards-placeholder.png"
         />
@@ -43,7 +45,7 @@ export default function Home() {
         <h2 className="text-3xl mb-6">Skills</h2>
         <div className="flex flex-wrap gap-2">
           {['React Native', 'Expo', 'TypeScript', 'AsyncStorage', 'API Integration', 'Firebase/Supabase (Planned)'].map(skill => (
-            <span key={skill} className="px-3 py-1 bg-gray-200 dark:bg-gray-800 rounded-full text-sm">
+            <span key={skill} className="px-3 py-1 bg-gray-200 dark:bg-gray-800 rounded-full text-sm text-[#6B7280] dark:text-[#93B8BF]">
               {skill}
             </span>
           ))}
