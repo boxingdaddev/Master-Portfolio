@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180" height="54" viewBox="0 0 180 54" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Get it on Google Play">
+  <title>Get it on Google Play</title>
+  <rect x="0.5" y="0.5" rx="10" ry="10" width="179" height="53" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1"/>
+  <!-- Play Store triangle -->
+  <g transform="translate(12,12) scale(1.2)">
+    <polygon points="0,0 20,10 0,20" fill="#34A853"/>
+    <polygon points="0,0 10,10 0,20" fill="#FBBC05"/>
+    <polygon points="0,0 20,10 10,10" fill="#EA4335"/>
+    <polygon points="0,20 10,10 20,10" fill="#4285F4"/>
+  </g>
+  <!-- Text -->
+  <g transform="translate(50,16)" fill="#0A0A0A">
+    <text x="0" y="10" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="0.3">Get it on</text>
+    <text x="0" y="28" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="18" letter-spacing="0.2">Google Play</text>
+  </g>
+</svg>
